@@ -114,6 +114,13 @@ def sqlite_copy_shelve(name_shelve, name_db, name_table):
 
 
 def sqlite_search_data(name_data, name_db, name_table):
+    """
+    :param name_data:
+    :param name_db:
+    :param name_table:
+    :return: поиск данных по дате
+    """
+
     base_conn = None
     try:
         base_conn = sqlite3.connect(name_db)
@@ -161,3 +168,5 @@ if __name__ == '__main__':
     # gas(2022, 4, 13, 11, 6)
     # print_shelve()
     # print(datetime.today() - a)
+
+    help(sqlite_search_data)
