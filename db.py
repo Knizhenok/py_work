@@ -443,3 +443,4 @@ if __name__ == '__main__':
 
         elif now.minute > stop_minute:
             run = True
+        print('Hello')
