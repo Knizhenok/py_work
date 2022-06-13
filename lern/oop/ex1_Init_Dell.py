@@ -31,11 +31,37 @@ class Ellipse:
 
 class TriangleChecker:
     def __init__(self, a, b, c):
-        pass
+        self.a = a
+        self.b = b
+        self.c = c
+
+    def is_triangle(self):
+        if isinstance(self.a, str) or isinstance(self.b, str) \
+                or isinstance(self.c, str):
+            return 1
+        elif self.a <= 0 or self.b <= 0 or self.c <= 0:
+            return 1
+        elif self.a + self.b <= self.c or \
+                self.b + self.c <= self.a or \
+                self.a + self.c <= self.a:
+            return 2
+        else:
+            return 3
 
 
 if __name__ == '__main__':
+
     pass
+
+    #########################################
+    # a, b, c = map(int, input().split())
+    # print(a, b, c)
+    # tr = TriangleChecker(a, b, c)
+    # print(tr.is_triangle())
+    #
+    # otr = TriangleChecker('1', 2, 3)
+    # print(otr.is_triangle())
+
     ##################################################################################
     # elements = []
     # temp = (Line(random.randint(0, 100), random.randint(0, 100), random.randint(0, 100)),
@@ -63,5 +89,3 @@ if __name__ == '__main__':
     # print(len(points))
     # print(points[2].color)
     ##################################################################################
-
-
