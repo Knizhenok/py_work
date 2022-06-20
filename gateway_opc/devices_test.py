@@ -1,15 +1,14 @@
 import table_address as ta
+import copy
 
 
 class CC301:
-    registers_values = {}
-    temp_stroke = ''
 
     def __init__(self, table_address, opc_address1, opc_address2, start_number_modbus_registers=0):
         self.opc_address1 = str(opc_address1)
         self.opc_address2 = str(opc_address2)
         self.start_number_modbus_registers = start_number_modbus_registers
-        self.registers_values = table_address
+        self.registers_values = copy.deepcopy(table_address)
 
         for temp in self.registers_values.values():
             a = temp.get_name()
@@ -70,4 +69,11 @@ if __name__ == '__main__':
     for key, value in CC301_1.registers_values.items():
         print(key, value.get_address_modbus(), value.get_name())
 
+    for key, value in CC301_2.registers_values.items():
+        print(key, value.get_address_modbus(), value.get_name())
 
+    for key, value in CC301_3.registers_values.items():
+        print(key, value.get_address_modbus(), value.get_name())
+
+    for key, value in CC301_SN19092152.registers_values.items():
+        print(key, value.get_address_modbus(), value.get_name())
