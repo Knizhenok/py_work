@@ -1,3 +1,10 @@
+class Value:
+    def __init__(self, name, value,  address_modbus):
+        self.name = name
+        self.value = value
+        self.address_modbus = address_modbus
+
+
 class CC301:
     """
     print(name, value, quality, time)
@@ -44,6 +51,7 @@ class CC301:
     >200.4.1.41: dtDouble, 0[40]	=VALUE*0.001; Реактивная обратная энергия по тарифу 4, кВар ч
     >200.4.1.42: dtDouble, 0[41]	; Текущие дата и время прибора
     """
+    registers = {}
 
     def __init__(self,
                  curr_active_power_total=None,

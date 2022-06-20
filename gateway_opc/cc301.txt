@@ -1,0 +1,89 @@
+>200.4.1.1: dtDouble, 0[0] =VALUE*0.001; curr_active_power_total, kW
+>200.4.1.2: dtDouble, 0[1] =VALUE*0.001; curr_active_power_phase1, kW
+>200.4.1.3: dtDouble, 0[2] =VALUE*0.001; curr_active_power_phase2, kW
+>200.4.1.4: dtDouble, 0[3] =VALUE*0.001; curr_active_power_phase3, kW
+>200.4.1.5: dtDouble, 0[4] =VALUE*0.001; total_curr_reactive_power, kvar
+>200.4.1.6: dtDouble, 0[5] =VALUE*0.001; curr_reactive_power_phase1, kvar
+>200.4.1.7: dtDouble, 0[6] =VALUE*0.001; curr_reactive_power_phase2, kvar
+>200.4.1.8: dtDouble, 0[7]=VALUE*0.001; curr_reactive_power_phase3, kvar
+>200.4.1.9: dtDouble, 0[8] ; curr_voltage_average_for_phases, V
+>200.4.1.10: dtDouble, 0[9] ; curr_voltage_phase1, V
+>200.4.1.11: dtDouble, 0[10] ; curr_voltage_phase2, V
+>200.4.1.12: dtDouble, 0[11] ; curr_voltage_phase3, V
+>200.4.1.13: dtDouble, 0[12] ; curr_average_for_phases, A
+>200.4.1.14: dtDouble, 0[13] ; сurr_phase1, A
+>200.4.1.15: dtDouble, 0[14] ; сurr_phase2, A
+>200.4.1.16: dtDouble, 0[15] ; curr_phase3, A
+>200.4.1.17: dtDouble, 0[16] ; Not used (=0)
+>200.4.1.18: dtDouble, 0[17] ; cos_F_phase1
+>200.4.1.19: dtDouble, 0[18] ; cos_F_phase2
+>200.4.1.20: dtDouble, 0[19] ; cos_F_phase3
+>200.4.1.21: dtDouble, 0[20] ; frequency Hz
+>200.4.1.22: dtDouble, 0[21] =VALUE*0.001; the_amount_of_active_direct_energy, kWh
+>200.4.1.23: dtDouble, 0[22] =VALUE*0.001; the_amount_of_active_reverse_energy, kWh
+>200.4.1.24: dtDouble, 0[23]=VALUE*0.001; tum_of_reactive_direct_energy, kvarh
+>200.4.1.25: dtDouble, 0[24] =VALUE*0.001; tum_of_reactive_reverse_energy, kvarh
+>200.4.1.26: dtDouble, 0[25] =VALUE*0.001; active_direct_energy_at_tariff1, kWh
+
+>200.4.1.27: dtDouble, 0[26] =VALUE*0.001; active_everse_energy_at_tariff1, kWh
+>200.4.1.28: dtDouble, 0[27] =VALUE*0.001; reactive_direct_energy_at_tariff1, kvarh
+>200.4.1.29: dtDouble, 0[28] =VALUE*0.001; reactive_reverse_energy_at_tariff1, kvarh
+>200.4.1.30: dtDouble, 0[29] =VALUE*0.001; reactive_direct_energy_at_tariff2, kWh
+>200.4.1.31: dtDouble, 0[30] =VALUE*0.001; reactive_reverse_energy_at_tariff2, kWh
+>200.4.1.32: dtDouble, 0[31] =VALUE*0.001; reactive_direct_energy_at_tariff2, kvarh
+>200.4.1.33: dtDouble, 0[32] =VALUE*0.001; reactive_reverse_energy_at_tariff2, kvarh
+>200.4.1.34: dtDouble, 0[33] =VALUE*0.001; active_direct_energy_at_tariff3, kWh
+>200.4.1.35: dtDouble, 0[34] =VALUE*0.001; active_reverse_energy_at_tariff3, kWh
+>200.4.1.36: dtDouble, 0[35] =VALUE*0.001; reactive_direct_energy_at_tariff3, kvarh
+>200.4.1.37: dtDouble, 0[36] =VALUE*0.001; reactive_reverse_energy_at_tariff3, kvarh
+>200.4.1.38: dtDouble, 0[37] =VALUE*0.001; active_direct_energy_at_tariff4, kWh
+>200.4.1.39: dtDouble, 0[38] =VALUE*0.001; active_reverse_energy_at_tariff4, kWh
+>200.4.1.40: dtDouble, 0[39] =VALUE*0.001; reactive_direct_energy_at_tariff4, kvarh
+>200.4.1.41: dtDouble, 0[40] =VALUE*0.001; reactive_reverse_energy_at_tariff4, kvarh
+>200.4.1.42: dtDouble, 0[41] ; current_date_time_device.42: dtDouble, 0[41]	; Текущие дата и время прибора
+
+
+
+
+
+curr_active_power_total, 
+curr_active_power_phase1, 
+curr_active_power_phase2,
+curr_active_power_phase3,
+total_curr_reactive_power, 
+curr_reactive_power_phase1, 
+curr_reactive_power_phase2, 
+curr_reactive_power_phase3, 
+curr_voltage_average_for_phases, 
+curr_voltage_phase1,
+curr_voltage_phase2, 
+curr_voltage_phase3, 
+curr_average_for_phases,
+сurr_phase1, 
+сurr_phase2, 
+curr_phase3,
+cos_F_phase1,
+cos_F_phase2,
+cos_F_phase3,
+frequency,
+the_amount_of_active_direct_energy, 
+the_amount_of_active_reverse_energy, 
+tum_of_reactive_direct_energy, 
+tum_of_reactive_reverse_energy, 
+active_direct_energy_at_tariff1, 
+active_everse_energy_at_tariff1, 
+reactive_direct_energy_at_tariff1, 
+reactive_reverse_energy_at_tariff1, 
+reactive_direct_energy_at_tariff2, 
+reactive_reverse_energy_at_tariff2, 
+reactive_direct_energy_at_tariff2, 
+reactive_reverse_energy_at_tariff2, 
+active_direct_energy_at_tariff3, 
+active_reverse_energy_at_tariff3, 
+reactive_direct_energy_at_tariff3, 
+reactive_reverse_energy_at_tariff3, 
+active_direct_energy_at_tariff4, 
+active_reverse_energy_at_tariff4, 
+reactive_direct_energy_at_tariff4, 
+reactive_reverse_energy_at_tariff4, 
+current_date_time_device
