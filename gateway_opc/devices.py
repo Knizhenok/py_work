@@ -1,8 +1,26 @@
 class Value:
-    def __init__(self, name, value,  address_modbus):
+    def __init__(self, name='', value=0, address_modbus=0):
         self.name = name
         self.value = value
         self.address_modbus = address_modbus
+
+    def set_name(self, name):
+        self.name = name
+
+    def get_name(self):
+        return self.name
+
+    def set_value(self, value):
+        self.value = value
+
+    def get_value(self):
+        return self.value
+
+    def set_address_modbus(self, address_modbus):
+        self.address_modbus = address_modbus
+
+    def get_address_modbus(self):
+        return self.address_modbus
 
 
 class CC301:
@@ -53,58 +71,57 @@ class CC301:
     """
     registers = {}
 
-    def __init__(self,
-                 curr_active_power_total=None,
-                 curr_active_power_phase1=None,
-                 curr_active_power_phase2=None,
-                 curr_active_power_phase3=None,
+    def __init__(self, curr_active_power_total=Value(),
+                 curr_active_power_phase1=Value(),
+                 curr_active_power_phase2=Value(),
+                 curr_active_power_phase3=Value(),
 
-                 total_curr_reactive_power=None,
-                 curr_reactive_power_phase1=None,
-                 curr_reactive_power_phase2=None,
-                 curr_reactive_power_phase3=None,
+                 total_curr_reactive_power=Value(),
+                 curr_reactive_power_phase1=Value(),
+                 curr_reactive_power_phase2=Value(),
+                 curr_reactive_power_phase3=Value(),
 
-                 curr_voltage_average_for_phases=None,
-                 curr_voltage_phase1=None,
-                 curr_voltage_phase2=None,
-                 curr_voltage_phase3=None,
+                 curr_voltage_average_for_phases=Value(),
+                 curr_voltage_phase1=Value(),
+                 curr_voltage_phase2=Value(),
+                 curr_voltage_phase3=Value(),
 
-                 curr_average_for_phases=None,
-                 curr_phase1=None,
-                 curr_phase2=None,
-                 curr_phase3=None,
+                 curr_average_for_phases=Value(),
+                 curr_phase1=Value(),
+                 curr_phase2=Value(),
+                 curr_phase3=Value(),
 
-                 cos_f_phase1=None,
-                 cos_f_phase2=None,
-                 cos_f_phase3=None,
-                 frequency=None,
+                 cos_f_phase1=Value(),
+                 cos_f_phase2=Value(),
+                 cos_f_phase3=Value(),
+                 frequency=Value(),
 
-                 the_amount_of_active_direct_energy=None,
-                 the_amount_of_active_reverse_energy=None,
-                 tum_of_reactive_direct_energy=None,
-                 tum_of_reactive_reverse_energy=None,
+                 the_amount_of_active_direct_energy=Value(),
+                 the_amount_of_active_reverse_energy=Value(),
+                 tum_of_reactive_direct_energy=Value(),
+                 tum_of_reactive_reverse_energy=Value(),
 
-                 active_direct_energy_at_tariff1=None,
-                 active_reverse_energy_at_tariff1=None,
-                 reactive_direct_energy_at_tariff1=None,
-                 reactive_reverse_energy_at_tariff1=None,
+                 active_direct_energy_at_tariff1=Value(),
+                 active_reverse_energy_at_tariff1=Value(),
+                 reactive_direct_energy_at_tariff1=Value(),
+                 reactive_reverse_energy_at_tariff1=Value(),
 
-                 active_direct_energy_at_tariff2=None,
-                 active_reverse_energy_at_tariff2=None,
-                 reactive_direct_energy_at_tariff2=None,
-                 reactive_reverse_energy_at_tariff2=None,
+                 active_direct_energy_at_tariff2=Value(),
+                 active_reverse_energy_at_tariff2=Value(),
+                 reactive_direct_energy_at_tariff2=Value(),
+                 reactive_reverse_energy_at_tariff2=Value(),
 
-                 active_direct_energy_at_tariff3=None,
-                 active_reverse_energy_at_tariff3=None,
-                 reactive_direct_energy_at_tariff3=None,
-                 reactive_reverse_energy_at_tariff3=None,
+                 active_direct_energy_at_tariff3=Value(),
+                 active_reverse_energy_at_tariff3=Value(),
+                 reactive_direct_energy_at_tariff3=Value(),
+                 reactive_reverse_energy_at_tariff3=Value(),
 
-                 active_direct_energy_at_tariff4=None,
-                 active_reverse_energy_at_tariff4=None,
-                 reactive_direct_energy_at_tariff4=None,
-                 reactive_reverse_energy_at_tariff4=None,
+                 active_direct_energy_at_tariff4=Value(),
+                 active_reverse_energy_at_tariff4=Value(),
+                 reactive_direct_energy_at_tariff4=Value(),
+                 reactive_reverse_energy_at_tariff4=Value(),
 
-                 current_date_time_device=None
+                 current_date_time_device=Value()
                  ):
         self.curr_active_power_total = curr_active_power_total,
         self.curr_active_power_phase1 = curr_active_power_phase1,
@@ -168,4 +185,8 @@ class TM104M:
 
 
 class Ventilation:
+    pass
+
+
+if __name__ == '__main__':
     pass
