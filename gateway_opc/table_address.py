@@ -129,5 +129,77 @@ ventilation_boolean = {
 
 }
 
+energy_center_real = {
+            'pressure_after_network_pumps': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1R44602')
+}
+
+energy_center_boolean = {
+            'work_heating_unit1': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2049'),
+            'work_heating_unit2': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2050'),
+            'work_fan1_RPV': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2051'),
+            'work_fan2_RPV': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2052'),
+            'work_from_input1_SCHSV': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2053'),
+            'work_from_input2_SCHSV': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2054'),
+            'Turnon_street_lighting': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2561'),
+            'pump_K7.1.1_on': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2149'),
+            'pump_K7.1.2_on': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2150'),
+            'pump_K7.2_on': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2151'),
+            'pump_K7.1.1_automatic_mode': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2152'),
+            'pump_K7.1.2_automatic_mode': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2153'),
+            'pump_K7.2_auto_mode': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2154'),
+
+            'alarm_pump_K7_dry_running': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2155'),
+            'alarm_pump_K7.1.1_the starter_did_not_work': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2156'),
+            'alarm_pump_K7.1.1_PCH': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2157'),
+            'alarm_pump_K7.1.1_AWR_differential_pressure': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2158'),
+            'alarm_pump_K7.1.2_not_workong_starter': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2159'),
+            'larm_pump_K7.1.2_PCH': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2160'),
+            'alarm_pump_K7.1.2_AWR_differential_pressure': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2161'),
+            'alarm_pump_K7.2_not_workong_starter': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2162'),
+            'alarm_pump_K7.2_PCH': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2163'),
+
+            'pump_alarm_K7.1.1_general': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2164'),
+            'pump_alarm_K7.1.2_general': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2165'),
+            'pump_alarm_K7.2_general': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2166'),
+            'signal_to_start_pumps_7.1_from_Logo': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2167'),
+            'signal_to_start_pumps_7.2_from_Logo': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2168'),
+            'select_main_pump_K7.1.1_K7.1.2': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2169'),
+
+            'pump_K8.1_on': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2170'),
+            'pump_K8.2_on': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2171'),
+            'turn_pumps_K8': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2172'),
+            'pump_K8.1_auto_mode': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2173'),
+            'pump_K8.2_auto_mode': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2174'),
+            'select_main_pump_K8.1_K8.2': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2175'),
+            'alarm_pump_K8.1_the starter_did_not_work': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2176'),
+            'alarm_pump_K8.1_motor_thermal_protection': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2177'),
+            'alarm_pump_K8.1_AWR_differential_pressure': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2178'),
+            'alarm_pump_K8.2_not_workong_starter': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2179'),
+            'alarm_pump_K8.2_motor_thermal_protection': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2180'),
+            'alarm_pump_K8.2_AWR_differential_pressure': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2181'),
+            'alarm_pump_K8.1_general': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2182'),
+            'alarm_pump_K8.2_general': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2183'),
+
+            'pump_K16.1_on': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2184'),
+            'pump_K16.2_on': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2185'),
+            'turn_K16': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2186'),
+            'pump_K16.1_auto_mode': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2187'),
+            'pump K16.2_auto_mode': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2188'),
+            'select_main_pump_K16.1_K16.2': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2189'),
+            'alarm_pump_K16.1_the starter_did_not_work': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2190'),
+            'alarm_pump_K16.1_motor_thermal_protection': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2191'),
+            'alarm_pump_K16.1_AWR_differential_pressure': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2192'),
+            'alarm_pump_K16.2_not_workong_starter': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2193'),
+            'alarm_pump_K16.2_motor_thermal_protection': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2194'),
+            'alarm_pump_K16.2_AWR_differential_pressure': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2195'),
+            'alarm_pump_K16_dry_running': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2196'),
+            'alarm_pump_K16.1_general': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2197'),
+            'alarm_pump_K16.2_general': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2198'),
+            'alarm_pressure_sensor_after_networkpumps': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C42199'),
+            'alarm_no_connection_moduleA2': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2200'),
+            'alarm_no_connection_moduleA3': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2201'),
+            'alarm_no_connection_moduleA4': Value(name='Kamenb_kotel_eceh_mdbs_A/dev/ttyS0_A1C2202'),
+}
+
 
 
