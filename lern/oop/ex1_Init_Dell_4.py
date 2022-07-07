@@ -1,57 +1,26 @@
-class Cart:
-    def __init__(self):
-        self.goods = []
+class Node:
+    const = 0
 
-    def add(self, gd):
-        self.goods.append(gd)
+    def __init__(self, data):
+        self.data = data
+        self.next = None
 
-    def remove(self, indx):
-        self.goods.pop(indx)
+    def append(self, val):
+        end = Node(val)
+        self.const += 1
+        n = self
+        print(f'n = {n}')
 
-    def get_list(self):
-        return [f'{g.name}: {g.price}' for g in self.goods]
+        while n.next:
+            n = n.next
+            print(f'n.next {n}')
+        n.next = end
 
-
-class Table:
-    def __init__(self, name, price):
-        self.name = name
-        self.price = price
-
-
-class TV:
-    def __init__(self, name, price):
-        self.name = name
-        self.price = price
-
-
-class Notebook:
-    def __init__(self, name, price):
-        self.name = name
-        self.price = price
-
-
-class Cup:
-    def __init__(self, name, price):
-        self.name = name
-        self.price = price
+        print(self.const)
 
 
 if __name__ == '__main__':
-    tv1 = TV("samsung", 1111)
-    tv2 = TV("LG", 1234)
-    table = Table("ikea", 2345)
-    n1 = Notebook("msi", 5433)
-    n2 = Notebook("apple", 542)
-    c = Cup("keepcup", 43)
+    ll = Node(1)
 
-    cart = Cart()
-    cart.add(tv1)
-    cart.add(tv2)
-    cart.add(table)
-    cart.add(n1)
-    cart.add(n2)
-    cart.add(c)
-
-    print(cart.get_list())
-    cart.remove(1)
-    print(cart.get_list())
+    ll.append(2)
+    ll.append(3)
