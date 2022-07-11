@@ -7,21 +7,9 @@ class ListObject:
     def __init__(self, data):
         self.data = data
         self.next_obj = None
-        # print(self.data)
 
-    def link(self, val):
-        end = ListObject(val)
-        print(end.data)
-        # self.const += 1
-        n = self
-        # print(f'n = {n}')
-
-        while n.next_obj:
-            n = n.next_obj
-            # print(f'n.next {n}')
-        n.next_obj = end
-
-        # print(self.const)
+    def link(self, obj):
+        self.next_obj = obj
 
 
 if __name__ == '__main__':
@@ -36,7 +24,9 @@ if __name__ == '__main__':
               '1.7 Методы класса (classmethod) и статические методы (staticmethod)']
 
     head_obj = ListObject(lst_in[0])
-    print(head_obj.data)
+    obj = head_obj
 
-    for line in lst_in[1:]:
-        head_obj.link(line)
+    for i in range(1, len(lst_in)):
+        obj_new = ListObject(lst_in[i])
+        obj.link(obj_new)
+        obj = obj_new

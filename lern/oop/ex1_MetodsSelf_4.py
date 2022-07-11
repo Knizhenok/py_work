@@ -3,7 +3,7 @@ class Translator:
 
     def add(self, eng, rus):
         if eng in self.dictionary:
-            self.dictionary[eng].append(rus)
+            self.dictionary[eng].link(rus)
         else:
             self.dictionary[eng] = [rus]
 
