@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 import sys
 
 
 class ListObject:
-    # const = 0
 
     def __init__(self, data):
         self.data = data
@@ -31,7 +29,8 @@ if __name__ == '__main__':
         obj_new = ListObject(lst_in[i])
         obj.link(obj_new)
         obj = obj_new
-=======
+
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -74,4 +73,3 @@ if __name__ == '__main__':
 
     print(linked_list)
     print(linked_list.size_node())
->>>>>>> 29986ae (lern 15.17)
