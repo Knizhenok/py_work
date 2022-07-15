@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import sys
 
 
@@ -30,3 +31,47 @@ if __name__ == '__main__':
         obj_new = ListObject(lst_in[i])
         obj.link(obj_new)
         obj = obj_new
+=======
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+    def size_node(self):
+        count = 0
+        while self.next:
+            count += count
+        return count
+
+    def __str__(self):
+        return f'[{self.data}]->{self.next}'
+
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def size_node(self):
+        count = 0
+        temp_count = self.head
+        while temp_count:
+            count += 1
+            temp_count = temp_count.next
+        return count
+
+    def __str__(self):
+        return str(self.head)
+
+
+if __name__ == '__main__':
+    linked_list = LinkedList()
+    temp = Node(1)
+    linked_list.head = temp
+
+    for i in range(2, 5):
+        temp.next = Node(i)
+        temp = temp.next
+
+    print(linked_list)
+    print(linked_list.size_node())
+>>>>>>> 29986ae (lern 15.17)
