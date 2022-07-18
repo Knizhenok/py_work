@@ -129,7 +129,7 @@ def electricity(
                 ws['C19'].value = data_dictionary[borisov_power_2]
                 ws['C22'].value = data_dictionary[soligorsk_power]
 
-            wb.save(f'./electricity/{datetime.today().strftime("%B%Y")}_el.xlsx')  # сохраним в новой книге
+            wb.__save()  # сохраним в новой книге
             wb.close()
             states_electricity.close()
     except BaseException as e:
@@ -178,7 +178,7 @@ def water(
                 ws['E11'].value = data_dictionary[soligorsk_water_cold]
                 ws['E12'].value = data_dictionary[soligorsk_water_hot]
 
-            wb.save(f'./water/{datetime.today().strftime("%B%Y")}_w.xlsx')  # сохраним в новой книге
+            wb.__save()  # сохраним в новой книге
             wb.close()
             states_water.close()
     except BaseException as e:
@@ -228,7 +228,7 @@ def heat(
                 ws['E11'].value = data_dictionary[soligorsk_water_cold]
                 ws['E12'].value = data_dictionary[soligorsk_water_hot]
 
-            wb.save(f'./heat/{datetime.today().strftime("%B%Y")}_h.xlsx')  # сохраним в новой книге
+            wb.__save()  # сохраним в новой книге
             wb.close()
             states_heat.close()
     except BaseException as e:
@@ -266,7 +266,7 @@ def gas(
                 ws['I5'].value = data_dictionary[minsk_co_gaz_1VR]
 
             data_dictionary.clear()
-            wb.save(f'./gas/{datetime.today().strftime("%B%Y")}_gas.xlsx')  # сохраним в новой книге
+            wb.__save()  # сохраним в новой книге
             wb.close()
             states.close()
     except BaseException as e:

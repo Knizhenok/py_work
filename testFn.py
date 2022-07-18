@@ -77,7 +77,7 @@ def gas(
             data_dictionary.clear()
             states.close()
 
-            wb.save(f'./gas/{datetime.today().strftime("%B%Y")}_gas.xlsx')  # сохраним в новой книге
+            wb.__save()  # сохраним в новой книге
             wb.close()
             states.close()
 
